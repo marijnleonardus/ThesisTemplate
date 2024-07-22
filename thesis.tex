@@ -6,20 +6,11 @@
 \input{src/colors}
 \input{src/packages}
 \input{src/commands}
-\input{src/vector}
 \input{src/mathematics}
-\input{src/lemma}
-\input{src/review}
-\input{src/tikz}
 
 %%%% Graphics paths
 % **********************************************************
 \graphicspath{{img/}{../../img/}{../../../img/}}
-
-%%%% REVIEWING OF THESIS
-% **********************************************************
-%\usepackage{showframe}
-\setreviewsoff
 
 %%%% DOCUMENT COLORS  **********************************************************
 % see src/colors to change colors
@@ -27,12 +18,11 @@
 %%%% DOCUMENT DETAILS **********************************************************
 \author{Name of Author}
 \newcommand{\placeofbirth}{Place of birth}
-\renewcommand{\year}{2022}
-\newcommand{\defensedate}{maandag 30 december 2022}
+\newcommand{\defensedate}{31 january 2099}
 \newcommand{\defensetime}{16:00}
 \newcommand{\maintitle}{Awesome thesis title}
 \newcommand{\subtitle}{with an awesome subtitle}
-\newcommand{\isbn}{123-45-678-9012-3}     % 123boldmath-45-678-9012-3
+\newcommand{\isbn}{0123-456-789}    
 \newcommand{\printer}{Name of printer || www.printerswebsite.nl}
 \newcommand{\rector}{prof. dr. Rector}
 % other relevant meta data about the thesis can be found in preface.tex
@@ -69,22 +59,22 @@
 \thispagestyle{empty}
 \setcounter{page}{1}
 \pagenumbering{arabic}
-\part{Background}\label{part: intro}
+\part{Background}\label{part:background}
 \include{3_chapters/0_introduction/introduction}
 % *************************************************************
 %%%% first part
 \cleardoublepage
-\part{Second chapter}\label{part: design}
+\part{Second chapter}\label{part:design}
 \include{3_chapters/1_dummy_chapter/dummy}
 
 % *************************************************************
 %%%% second part
 \cleardoublepage
-\part{Third part}\label{part: design}
-\include{3_chapters/1_dummy_chapter/dummy}
+\part{Third part}\label{part:design2}
+\include{3_chapters/2_dummy_chapter/dummy_2}
 
 % *************************************************************
-\part{Closing}\label{part: closing}
+\part{Closing}\label{part:closing}
 \include{3_chapters/3_conclusions/conclusions}
 
 %%%% APPENDIX ******************************************************************
