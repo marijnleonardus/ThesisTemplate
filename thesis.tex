@@ -1,5 +1,6 @@
 %%%% DOCUMENT CLASS ************************************************************
-\documentclass[print,thumbmain]{src/thesis}  % uncomment for writing
+
+\documentclass[print,thumbmain]{src/PhdThesisMarijn}  % uncomment for writing
 %\documentclass[final]{src/thesis} % uncomment for rendering/final version
 
 %%%% PREAMBLE ******************************************************************
@@ -28,6 +29,7 @@
 % other relevant meta data about the thesis can be found in preface.tex
 
 \makeatletter % generates all the \author stuff
+
 %%%% MAIN DOCUMENT *************************************************************
 \begin{document} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% ***************************************************************************
@@ -35,7 +37,10 @@
 \thispagestyle{empty}
 
 %%%% FRONT MATTERS *************************************************************
-\cover{thesis_front.pdf}    % Adds your thesis' front cover if the option 'print' is NOT used. Printing companies require the thesis cover to be supplied separately and in a different format. Definition of \cover{} is given in commands.tex.
+\cover{thesis_front.pdf}   
+% Adds your thesis' front cover if the option 'print' is NOT used.
+% Printing companies require the thesis cover to be supplied separately and in a different format.
+% Definition of \cover{} is given in commands.tex.
 
 % Front matter
 \include{0_preface/preface}
@@ -60,17 +65,15 @@
 \setcounter{page}{1}
 \pagenumbering{arabic}
 \part{Background}\label{part:background}
+
 \include{3_chapters/0_introduction/introduction}
+
 % *************************************************************
 %%%% first part
 \cleardoublepage
-\part{Second chapter}\label{part:design}
-\include{3_chapters/1_dummy_chapter/dummy}
+\part{Second Part}\label{part:design}
 
-% *************************************************************
-%%%% second part
-\cleardoublepage
-\part{Third part}\label{part:design2}
+\include{3_chapters/1_dummy_chapter/dummy}
 \include{3_chapters/2_dummy_chapter/dummy_2}
 
 % *************************************************************
